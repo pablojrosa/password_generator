@@ -1,8 +1,11 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
 <div class="container text-center">
-<h1>Hi mate, let's generate a very strong password!</h1>
-<form action={% url 'password' %}>
+<h1>Strong password generator</h1>
+Note: if nothig is selected, by default you'll have a password with a length of 10 and all characters in characters (isn't safety enought!)
+<br>
+<br>
+<form action={% url 'password' %}> 
     <select name="lenght">
         <option value="6">6</option>
         <option value="7">7</option>
@@ -13,7 +16,7 @@
         <option value="12">12</option>
         <option value="13">13</option>
         <option value="14">14</option>
-    </select>
+    </select> Lenght
     <br>
     <input type="checkbox" name="uppercase"> Uppercase
     <br>
